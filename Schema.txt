@@ -10,6 +10,7 @@ TABLE Students{
     first_name: varchar(32)
     last_name: varchar(32)
     email_ad: varchar(32)
+    main_avatar: varchar(32) {ABSOLUTE PATH TO THE UPLOADED IMAGE}
 }
 
 TABLE Teachers{
@@ -20,3 +21,22 @@ TABLE Teachers{
     last_name: varchar(32)
     email_ad: varchar(32)
 }
+
+TABLE Classes{
+    cid: int[10] UNSIGNED PRIMARY AUTOINCREMENT
+    class_name: varchar(32)
+    privacy: varchar(7) {PRIVATE,PUBLIC,SECRET}
+}
+
+TABLE teaches{
+    cid: references Classes.cid
+    tid: references Teachers.cid
+    since: Date[10]
+}
+
+TABLE enrolls{
+    cid: references Classes.cid
+    sid: references Students.sid
+    since: Date[10]
+}
+
