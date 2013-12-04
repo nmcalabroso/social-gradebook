@@ -38,8 +38,6 @@ $db['default']['stricton'] = FALSE;
 
 6. On your browser, go to http://localhost/social-gradebook/. A welcome page should appear.
 
-START!
-
 
 
 
