@@ -11,7 +11,6 @@ http://www.apachefriends.org/en/index.html
 
 3. Open and Customize social-gradebook/application/config/database.php
 ```php
-
 $active_group = 'default';
 $active_record = TRUE;
 
@@ -37,6 +36,8 @@ $db['default']['stricton'] = FALSE;
 5. From the cloned project/directory, import social_gradebook_db.sql to phpMyAdmin
 
 6. On your browser, go to http://localhost/social-gradebook/. A welcome page should appear.
+
+START!
 
 
 

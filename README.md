@@ -10,8 +10,8 @@ http://www.apachefriends.org/en/index.html
 2. Clone this repository.
 
 3. Open and Customize social-gradebook/application/config/database.php
-```php
 
+```php
 $active_group = 'default';
 $active_record = TRUE;
 
