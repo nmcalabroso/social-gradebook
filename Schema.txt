@@ -1,0 +1,22 @@
+[Proposed Schema]
+Social Gradebook
+
+DBNAME: social_gradebook_db
+
+TABLE Students{
+    sid: int[10] UNSIGNED PRIMARY AUTOINCREMENT
+    username: varchar(32)
+    password: varchar(255)
+    first_name: varchar(32)
+    last_name: varchar(32)
+    email_ad: varchar(32)
+}
+
+TABLE Teachers{
+    tid: int[10] UNSIGNED PRIMARY AUTOINCREMENT
+    username: varchar(32)
+    password: varchar(255)
+    first_name: varchar(32)
+    last_name: varchar(32)
+    email_ad: varchar(32)
+}
